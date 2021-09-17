@@ -1,0 +1,27 @@
+/* TODO:
+
+Hub
+- Updatable relay factory
+
+ModelRelay:
++ read ABI, is something's conflicting about implementation?
++ in-call parameter for variable "output length" through assembly, compare gas costs with regular approach.
+- modifier onlyHubOrController
+- setMethod output size
+- ? optional public params of methods sizes
+
+Controller:
+- set output sizes
+
+
+
+Questions:
+- Can prepanding with 0s of msg.data be used to interfere or hack? We assume that we only call solidity contracts
+- Can we make Relay logic switchable while preserving data? Still having minimum gas costs.
+
+
+Later:
+- work on upgradable delegatecall mechanism
+- identifying if delegate contract has destruct call
+- statically check if ModelFactory works staticcall(g, a, in, insize, out, outsize)
+*/

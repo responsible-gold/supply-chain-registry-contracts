@@ -1,0 +1,28 @@
+{
+  "name": "open-registry-ethereum-private",
+  "version": "0.0.1",
+  "description": "Open Registry for IoT Smart Contracts",
+  "scripts": {
+    "test": "truffle test",
+    "babel-watch": "babel migrations/custom_deploy.js --out-file build/custom_deploy.js --watch",
+    "babel": "babel migrations/custom_deploy.js --out-file build/custom_deploy.js"
+  },
+  "contributors": [
+    "Drew Stone (http://chronicled.com)",
+    "Maksym Petkus <me@petkus.info> (http://chronicled.com)"
+  ],
+  "license" : "Apache-2.0",
+  "dependencies": {
+    "open-registry-utils": "^0.0.1",
+    "truffle": "4.0.1",
+    "ethereumjs-testrpc": "3.0.4",
+    "ethjs": "^0.3.1",
+    "ethjs-provider-signer": "^0.1.4",
+    "ethjs-signer": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
